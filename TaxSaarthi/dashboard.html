@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxSaarthi - Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+        header {
+            background-color: rgb(255,102,0);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #222222;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .stats .income {
+            color: green;
+        }
+        .stats .deductions {
+            color: #FF5C00;
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .button-grid button {
+            padding: 20px;
+            font-size: 16px;
+            background-color: rgb(255,102,0);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button-grid button:hover {
+            background-color: #003060;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dashboard - TaxSaarthi</h1>
+        <p>Your personal tax management assistant</p>
+    </header>
+
+    <div class="container">
+        <h2>Welcome to Your Dashboard</h2>
+        <p>Select an option below to proceed:</p>
+
+        <div class="stats">
+            <div class="income">Total Income: ₹0</div>
+            <div class="deductions">Total Deductions: ₹0</div>
+        </div>
+
+        <div class="button-grid">
+            <button onclick="location.href='log_income.html'">Log Income</button>
+            <button onclick="location.href='log_deduction.html'">Log Deduction</button>
+            <button onclick="location.href='itr_filing.html'">ITR Filing</button>
+            <button onclick="location.href='learn.html'">Learn</button>
+        </div>
+    </div>
+</body>
+</html>
